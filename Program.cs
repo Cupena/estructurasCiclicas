@@ -4,6 +4,8 @@ int valorPositivo = 0;
 int valorNegativo = 0;
 int opcion = 0;
 
+// Limpiar cualquier cosa de la consola
+Console.Clear();
 
 do
 {
@@ -23,9 +25,12 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         
         }
         Console.ResetColor();
+        Console.Clear();
     }
     else if(opcion !=5)
     {
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Yellow;
  Console.Write("Ingresando al sistema");
     
     for(int i = 0; i < 5 ; i++)
@@ -34,13 +39,20 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         Console.Write(". ");
     
     }
+    Console.ResetColor();
+    Console.Clear();
+
     switch (opcion)
     {
         case 1:
+        Console.Clear();
+    valorCero = 0;
+    valorPositivo =0;
+    valorNegativo = 0;
     
         for ( int i = 0; i < valor.Length; i++)
 {
-    Console.WriteLine($"Valor #{i+1}");
+    Console.Write($"Valor #{i+1}: ");
     if(int.TryParse(Console.ReadLine()!, out valor[i]))
     {
         if(valor[i] == 0)
@@ -64,11 +76,54 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         i--;
     }
 }
-
+Console.Clear();
         break;
     
         case 2:
+        Console.Clear();
+        if(valorCero == 0 && valorPositivo ==0 && valorNegativo ==0)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("No hay valores que mostrar. Volviendo al menu");
+            for(int i = 0 ; i < 5; i++)
+            {
+                Thread.Sleep(350);
+                Console.Write(". ");
+            }
+            Console.ResetColor();
+            Console.Clear();
+            break;
+        }
+        else
+        {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("Cargando valores ");
+        for(int i = 0 ; i < 5 ; i++)
+        {
+            Thread.Sleep(350);
+            Console.Write(". ");
+        }
+        Console.ResetColor();
+        Console.Clear();
+
+        Console.WriteLine("Los valores registrados son: ");
+        
+        for(int i = 0; i < valor.Length; i++)
+        {
+        if(valor[i] ==0) Console.ForegroundColor = ConsoleColor.Gray;
+        else if(valor[i]<0) Console.ForegroundColor = ConsoleColor.Red;
+        else if(valor[i]>0)Console.ForegroundColor = ConsoleColor.Green;
+            Thread.Sleep(105);
+            Console.WriteLine($"Valor #{1+i}: {valor[i]}");
+        }
+        Console.ResetColor();
+        Console.WriteLine("");
+        Console.WriteLine("Desea regresar al menu");
+        Console.ReadKey();
+        Console.Clear();
         break;
+        }   
+        
     
         case 3:
         if(valorCero == 0 && valorPositivo ==0 && valorNegativo ==0)
@@ -114,6 +169,7 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         Console.WriteLine("Volver al menu.");
         Console.ReadKey();
         Console.ResetColor();
+        Console.Clear();
         break;
         }
         
@@ -137,8 +193,15 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         default:
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine()
-        break:
+        Console.WriteLine("Debe introducir una opcion de acuerdo al menu.");
+        for (int i = 0; i < 5 ; i++)
+        {
+            Thread.Sleep(350);
+            Console.Write(". ");
+        }
+        Console.ResetColor();
+        Console.Clear();
+        break;
     }
     }
 
