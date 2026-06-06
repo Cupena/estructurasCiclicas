@@ -12,3 +12,4 @@ C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\refint
 C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.pdb
 C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.genruntimeconfig.cache
 C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\ref\estructurasCiclicas.dll
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.sourcelink.json

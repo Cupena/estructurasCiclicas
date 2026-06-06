@@ -2,7 +2,24 @@
 int valorCero = 0;
 int valorPositivo = 0;
 int valorNegativo = 0;
-for ( int i = 0; i < valor.Length; i++)
+int opcion = 0;
+
+
+do
+{
+Console.WriteLine("===   MENU   ===\n1. Introducir los valores\n2. Mostrar los valores introducidos\n3. Mostrar resultados sobre los valores\n4. Mostrar conclusion\n5. Salir del programa");
+if(int.TryParse(Console.ReadLine()!, out opcion))
+{
+    Console.Write("Ingresando al sistema");
+    for(int i = 0; i < 5 ; i++)
+    {
+        Thread.Sleep(500);
+        Console.Write(". ");
+    }
+    switch (opcion)
+    {
+        case 1:
+        for ( int i = 0; i < valor.Length; i++)
 {
     Console.WriteLine($"Valor #{i+1}");
     if(int.TryParse(Console.ReadLine()!, out valor[i]))
@@ -28,6 +45,35 @@ for ( int i = 0; i < valor.Length; i++)
         i--;
     }
 }
+
+        break;
+        case 2:
+        break;
+        case 3:
+        break;
+        case 4:
+        break;
+        case 5:
+        break;
+    }
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("Ha introducido un caracter invalido. ");
+    Console.ResetColor();
+    Console.WriteLine("");
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.Write("Saliendo del programa ");
+    for ( int i = 0 ; i < 5; i++)
+    {
+        Console.Write(". ");
+    }
+    Console.ResetColor();
+    opcion = 5;
+}
+}while(opcion !=5);
+
 
 
 

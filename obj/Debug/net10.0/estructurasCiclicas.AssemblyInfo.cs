@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("estructurasCiclicas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daeb6577997978f16f991e408f29f470ce9dbf08")]
 [assembly: System.Reflection.AssemblyProductAttribute("estructurasCiclicas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("estructurasCiclicas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
