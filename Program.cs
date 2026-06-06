@@ -179,8 +179,8 @@ Console.Clear();
         if(valorCero ==0 && valorPositivo ==0 && valorNegativo==0)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("No hay datos que comparar.\nVolviendo al menu")
-            if(int i = 0; i < 5; i++)
+            Console.WriteLine("No hay datos que comparar.\nVolviendo al menu");
+            for(int i = 0; i < 5; i++)
             {
                 Thread.Sleep(350);
                 Console.Write(". ");
@@ -192,13 +192,56 @@ Console.Clear();
         else
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Cargando comparativa de resultados")
+            Console.WriteLine("Cargando comparativa de resultados");
             for (int i = 0 ; i < 5; i++)
             {
                 Thread.Sleep(350);
                 Console.Write(". ");
             }
             Console.ResetColor();
+            Console.Clear();
+
+            Console.WriteLine("===   TOTALES   ===");
+            Console.WriteLine($"La cantidad de ceros (0) es igual a : {valorCero}");
+            Console.WriteLine($"La cantidad de numeros positivos (x>0) es igual a : {valorPositivo}");
+            Console.WriteLine($"La cantidad de numeros negativos (x<0) es igual a: {valorNegativo}");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Seguir a las comparaciones");
+            for(int i = 0; i < 5; i++)
+            {
+                Thread.Sleep(350);
+                Console.Write(". ");
+            }
+            Console.ResetColor();
+
+            Console.WriteLine("===   COMPARACIONES   ===");
+            Console.ForegroundColor = ConsoleColor.Green;
+            if(valorCero > valorPositivo && valorCero > valorNegativo)
+            {
+                Console.WriteLine("Hay una ventaja absoluta de parte los valores ceros.");
+            }
+            else if(valorCero > valorPositivo && valorCero ==valorNegativo) Console.WriteLine("Hay una ventaja de parte de los ceros hacia los positivos, pero igual a los negativos.");
+            else if(valorCero > valorNegativo && valorCero ==valorPositivo) Console.WriteLine("Hay una ventaja de parte de los ceros hacia los negativos, pero igual a los positivos.");
+            else if(valorPositivo > valorCero && valorPositivo > valorNegativo) Console.WriteLine("Hay una ventaja absoluta de parte de los positivos.");
+            else if(valorPositivo > valorCero && valorPositivo == valorNegativo) Console.WriteLine("Hay una ventaja de parte de los positivos hacia los ceros, pero igual a los negativos.");
+            else if(valorPositivo > valorNegativo && valorPositivo == valorCero) Console.WriteLine("Hay una ventaja de parte de los positivos hacia los negativos, pero igual a los positivos.");
+            else if(valorNegativo > valorCero && valorNegativo > valorPositivo) Console.WriteLine("Hay una ventaja absoluta de parte de los negativos.");
+            else if(valorNegativo > valorCero && valorNegativo == valorPositivo) Console.WriteLine("Hay una ventaja de parte de los negativos hacia los ceros, pero igual a los positivos.");
+            else if(valorNegativo > valorPositivo && valorNegativo == valorNegativo) Console.WriteLine("Hay una ventaja de parte de los negativos hacia los positivos, pero igual a los ceros.");
+            
+            Console.WriteLine("");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Volviendo al menu");
+            for(int i = 0; i < 5; i++)
+            {
+                Thread.Sleep(350);
+                Console.Write(". ");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Presione cualquier tecla");
+            Console.ReadKey();
             Console.Clear();
             break;
         }
