@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\bin\Debug\net10.0\estructurasCiclicas.exe
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\bin\Debug\net10.0\estructurasCiclicas.deps.json
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\bin\Debug\net10.0\estructurasCiclicas.runtimeconfig.json
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\bin\Debug\net10.0\estructurasCiclicas.dll
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\bin\Debug\net10.0\estructurasCiclicas.pdb
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.AssemblyInfo.cs
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.dll
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\refint\estructurasCiclicas.dll
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.pdb
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\estructurasCiclicas.genruntimeconfig.cache
+C:\Program Files (x86)\Programar\C#\estructurasCiclicas\obj\Debug\net10.0\ref\estructurasCiclicas.dll
