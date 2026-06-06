@@ -133,6 +133,12 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         }
         Console.ResetColor();
         break;
+        
+        default:
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine()
+        break:
     }
     }
 
@@ -140,18 +146,20 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
 }
 else
 {
+    Console.Clear();
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Ha introducido un caracter invalido. ");
     Console.ResetColor();
     Console.WriteLine("");
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write("Saliendo del programa ");
+    Console.Write("Volviendo al menu ");
     for ( int i = 0 ; i < 5; i++)
     {
+        Thread.Sleep(350);
         Console.Write(". ");
     }
     Console.ResetColor();
-    opcion = 5;
+    Console.Clear();
 }
 }while(opcion !=5);
 
