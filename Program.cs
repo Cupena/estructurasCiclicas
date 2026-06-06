@@ -175,7 +175,34 @@ Console.Clear();
         
   
         case 4:
-        break;
+        Console.Clear();
+        if(valorCero ==0 && valorPositivo ==0 && valorNegativo==0)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("No hay datos que comparar.\nVolviendo al menu")
+            if(int i = 0; i < 5; i++)
+            {
+                Thread.Sleep(350);
+                Console.Write(". ");
+            }
+            Console.ResetColor();
+            Console.Clear();
+            break;
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Cargando comparativa de resultados")
+            for (int i = 0 ; i < 5; i++)
+            {
+                Thread.Sleep(350);
+                Console.Write(". ");
+            }
+            Console.ResetColor();
+            Console.Clear();
+            break;
+        }
+        
   
         case 5:
         Console.Clear();
