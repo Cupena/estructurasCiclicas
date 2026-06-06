@@ -54,6 +54,12 @@ if(int.TryParse(Console.ReadLine()!, out opcion))
         case 4:
         break;
         case 5:
+        Console.Write("Saliendo del programa");
+        for ( int i = 0 ; i < 5 ; i++)
+        {
+            Thread.Sleep(500);
+            Console.Write(". ");
+        }
         break;
     }
 }
